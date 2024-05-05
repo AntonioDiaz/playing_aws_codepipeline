@@ -13,7 +13,7 @@ public class MapVsFlatmapTest {
   void test_map_with_optional() {
     Optional<String> optional = Optional.of("ole");
     Optional<Integer> optionalMapped = optional.map(p -> p.length());
-    assertEquals(Optional.of(3), optionalMapped);
+    assertEquals(Optional.of(2), optionalMapped);
   }
 
   @Test
