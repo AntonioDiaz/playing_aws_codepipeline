@@ -13,7 +13,7 @@ https://aws.amazon.com/blogs/devops/test-reports-with-aws-codebuild/
 * Lambda
 ![image](https://github.com/AntonioDiaz/playing_aws_codepipeline/assets/725743/88c5fe5c-812b-4926-b4f6-dff557c2dab0)
 
-
+* Event received
 ````json
 {
     "Records": [
