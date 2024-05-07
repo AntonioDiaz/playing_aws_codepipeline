@@ -38,3 +38,15 @@ https://aws.amazon.com/blogs/devops/test-reports-with-aws-codebuild/
     ]
 }
 ````
+
+* Sending email
+````json
+ {
+  "Effect": "Allow",
+  "Action": [
+    "ses:SendEmail",
+    "ses:SendRawEmail"
+  ],
+  "Resource": "*"
+ }
+````
