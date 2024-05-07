@@ -3,12 +3,11 @@ console.log('*Loading function');
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 const ses = new SESClient({ region: "eu-west-3" });
 
-
 export const handler = async (event, context) => {
     console.log('*Received event: ', JSON.stringify(event));
     const msgJson = JSON.parse(event.Records[0].Sns.Message);
-    console.log("event.Records[0].Sns.Message ->", msgJson.detail["completed-phase-status"]);
-    let subject = "BDD finished - " + msgJson.detail["completed-phase-status"];
+    console.log("event.Records[0].Sns.Message.build-status ->", msgJson.detail["build-status"]);
+    let subject = "BDD finished - " + msgJson.detail["build-status"];
 
     console.log("sending email.....");
       const command = new SendEmailCommand({
