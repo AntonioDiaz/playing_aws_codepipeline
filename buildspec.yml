@@ -19,4 +19,4 @@ reports: #New
   SurefireReports: # CodeBuild will create a report group called "SurefireReports".
     files: #Store all of the files
       - '**/*'
-    base-directory: 'target/surefire-reports' # Location of the reports
+    base-directory: 'target/site' # Location of the reports
